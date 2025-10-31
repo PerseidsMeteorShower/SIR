@@ -64,7 +64,6 @@ Meanings of each parameter:
 * --dataset: Knowledge graph name.
 * --model_path: Path to the model for semantic embedding.
 * --limit: Limit number of questions to test.
-* --batch_size: .
 * --batch_size: Batch size for questions to be processed.
 * --result_folder: output folder for results.
 
