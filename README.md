@@ -1,6 +1,6 @@
 <div align="center">    
  
-# SIR: Reasoning for LLMs through Self-Improving Rule-Guided Knowledge Graph Integration
+# SER: Reasoning for LLMs through Self-Evaluation Rule-Guided Knowledge Graph Integration
 
 </div>
 
@@ -14,13 +14,13 @@
 <img src="images/structure.png" width = "900" />
 
 <br/>
-Large language models (LLMs) often struggle with logical reasoning, frequently producing unfaithful answers. A significant bottleneck is the lack of large-scale, step-by-step reasoning traces data, which are costly to produce manually. While knowledge graphs (KGs) offer a promising source of structured knowledge to automate this process, directly extracting knowledge from KGs as context poses two challenges: (1) the extracted knowledge may be semantically related but logically incoherent, which can mislead the model, and (2) KGs are inherently incomplete, so the knowledge included in the context may be insufficient. To address these issues, we propose SIR, a self-improving rule-guided reasoning framework for LLMs. SIR leverages logical rules to extract coherent paths from KGs, generating faithful reasoning traces to guide the LLM. This rule-driven approach ensures the provided context is logically consistent. Furthermore, it incorporates a self-improving feedback loop that extracts new knowledge from the LLM's successful reasoning to dynamically enhancing the coverage of KG and rule sets for future queries. Experiments demonstrate that SIR can improve the reasoning performance of LLMs on multiple reasoning benchmarks.
+Despite advances in language understanding and generation, large language models (LLMs) still lack the specialized and verifiable knowledge required in medical settings. Knowledge graphs (KGs) can ground model outputs and support safe reasoning. However, medical reasoning is often implicit. The relations in reasoning path are usually not stated directly in the question. This forces LLMs to infer the path themselves, making errors more likely. At the same time, KGs are always incomplete and miss edges, which further blocks effective path finding. To address these challenges, we propose SER, a self-evolution rule-guided reasoning framework for LLM. SER uses logical rules to extract faithful reasoning paths from the KG, ensuring that the retrieved paths are both reliable and informative. Furthermore, it incorporates a self-evolution feedback loop that captures new knowledge from the LLM’s successful reasoning, gradually expanding the coverage of the KG and rule set for future queries. Experiments show that SER improves LLM reasoning performance across multiple medical benchmarks.
 
 ## Requirements
 
 1. Clone the repository:
  ```bash
- git clone https://github.com/PerseidsMeteorShower/SIR.git
+ git clone https://github.com/PerseidsMeteorShower/SER.git
  ```
 
 2. Install the required libraries:
